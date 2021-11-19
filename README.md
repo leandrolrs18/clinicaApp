@@ -15,9 +15,8 @@ dentro da pasta backend
 
 REACT 
 dentro da pasta frontend
-1. Instalação: 
-2. Criação: npx create-react-app clinica-front
-3. Iniciação: npm start
+1. Criação: npx create-react-app clinica-front
+2. Iniciação: npm start
 
 II. CLONE DESSE PROJETO NO GIT
 precisa ter o git instalado no pc
