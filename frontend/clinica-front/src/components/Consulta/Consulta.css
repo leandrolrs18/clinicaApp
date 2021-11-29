@@ -7,21 +7,21 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
   }
   
-  .Usuario:hover {
+  .Consulta:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .14);
   }
   
-  .Usuario ul {
+  .Consulta ul {
     padding-left: 0;
     margin: 0;
     list-style: none;
   }
   
-  .Usuario ul li strong {
-    color: #DA3C78;
+  .Consulta ul li strong {
+    color: #3c80da;
   }
   
-  .Usuario button {
+  .Consulta button {
     top: 0.5rem;
     right: 0.5rem;
     border: none;
@@ -35,12 +35,15 @@
     font-family: sans-serif;
     position: absolute;
     border-radius: 1.5rem;
-    background-color: #ced4da;
+    background-color: #ced5da;
     padding: .2rem .35rem .35rem .35rem;
   }
   
-  .Usuario button:hover,
-  .Usuario button:focus {
+  .Consulta button:hover,
+  .Consulta button:focus {
     color: #FFF;
-    background-color: #FF6CA8;
+    background-color: #6cacff;
+  }
+  .Consulta #buttons {
+    display: inline-block;
   }

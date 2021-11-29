@@ -1,29 +1,30 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import './Cadastro.css'
 
 function Cadastro() {
-  
+
   const [nome, setNome] = useState('')
   const [telefone, setTelefone] = useState('')
   const [cpf, setCpf] = useState('')
   const [senha, setSenha] = useState('')
   const [medico, setMedico] = useState('')
   const [especialidade, setEspecialidade] = useState('')
-  
+
 
   const onSubmitHandler = event => {
     event.preventDefault()
 
-    const usuario = { nome, telefone, cpf, senha, medico, especialidade}
+    const usuario = { nome, telefone, cpf, senha, medico, especialidade }
 
     //fetch('https://reqres.in/api/users', {
-     // method: 'POST',
-     // headers: { 'Content-Type': 'application/json' },
+    // method: 'POST',
+    // headers: { 'Content-Type': 'application/json' },
     //  body: JSON.stringify(usuario)
-   // })
-   //   .then(resposta => {
-    
+    // })
+    //   .then(resposta => {
+
     //  })
   }
 
@@ -51,7 +52,7 @@ function Cadastro() {
               id="phone"
               name="phone"
               value={telefone}
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"   
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               onChange={event => setTelefone(event.target.value)}
               required>
             </input>
@@ -105,9 +106,11 @@ function Cadastro() {
             </input>
           </div>
         </div>
-        <button type="submit">
-          Adicionar
-        </button>
+        <Link to={'/ConsultasPaciente'}>
+          <button type="submit">
+            Adicionar
+          </button>
+        </Link>
       </form>
     </div>
   )

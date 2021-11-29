@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import './AdicionarConsulta.css'
 
 function AdicionarConsulta() {
-  
+
   const [especialidade, setEspecialidade] = useState('')
   const [medico, setMedico] = useState('')
   const [data, setData] = useState('')
@@ -12,7 +13,7 @@ function AdicionarConsulta() {
   const onSubmitHandler = event => {
     event.preventDefault()
 
-    const usuario = { especialidade, medico, data,  horario}
+    const usuario = { especialidade, medico, data, horario }
 
     //fetch('https://reqres.in/api/users', {
     //  method: 'POST',
@@ -20,13 +21,13 @@ function AdicionarConsulta() {
     //  body: JSON.stringify(usuario)
     //})
     //  .then(resposta => {
-     //   if (resposta.ok) {
-     //     setNome('')
-      //    setSobrenome('')
-      //    setEmail('')
-       //   alert('Usuário cadastrado com sucesso!')
-       // }
-      //})
+    //   if (resposta.ok) {
+    //     setNome('')
+    //    setSobrenome('')
+    //    setEmail('')
+    //   alert('Usuário cadastrado com sucesso!')
+    // }
+    //})
   }
 
   return (
@@ -44,7 +45,7 @@ function AdicionarConsulta() {
               required>
             </input>
           </div>
-        </div>  
+        </div>
         <div className="Linha">
           <div className="Coluna">
             <label>Medico</label>
@@ -81,9 +82,11 @@ function AdicionarConsulta() {
             </input>
           </div>
         </div>
-        <button type="submit">
-          Adicionar
-        </button>
+        <Link to={'/ConsultasPaciente'}>
+          <button type="submit">
+            Adicionar
+          </button>
+        </Link>
       </form>
     </div>
   )

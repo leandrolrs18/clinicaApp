@@ -11,9 +11,13 @@ function Consulta(props) {
         <li><strong>Especialidade:</strong> {props.especialidade}</li>
         <li><strong>Data:</strong> {props.data.toString()}</li>
       </ul>
-      <button type="submit">Reagendar</button>
-      <button type="submit">Cancelar</button>
-    </div>
+      <div id="buttons">
+        <Link to={'/AdicionarConsulta'}>
+          <button type="submit">Reagendar</button>
+        </Link>
+        <button type="submit" onClick={props.removerUsuario}>Cancelar</button>
+      </div>
+    </div >
   )
 }
 //<button onClick={props.removerConsulta}>&times;</button>
