@@ -1,4 +1,4 @@
-.Cadastro {
+.AdicionarConsulta {
     width: 60rem;
     margin: 1rem 1rem;
     padding: 1.25rem;
@@ -7,34 +7,34 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
   }
   
-  .Cadastro h2 {
+  .AdicionarConsulta h2 {
     font-size: 1.25rem;
     text-transform: uppercase;
     color: #CA2C68;
     margin: .25rem 0;
   }
   
-  .Cadastro .Linha {
+  .AdicionarConsulta .Linha {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -.5rem;
     padding: .5rem 0;
   }
   
-  .Cadastro .Coluna {
+  .AdicionarConsulta .Coluna {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
     padding: 0 .5rem;
   }
   
-  .Cadastro label {
+  .AdicionarConsulta label {
     display: inline-block;
     margin-bottom: 1rem;
     margin-right: 1rem;
   }
   
-  .Cadastro input {
+  .AdicionarConsulta input {
     display: inline-block;
     width: 30rem;
     padding: .75rem .75rem;
@@ -48,7 +48,7 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   }
   
-  .Cadastro button {
+  .AdicionarConsulta button {
     color: #FFF;
     cursor: pointer;
     display: inline-block;
@@ -65,12 +65,12 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   }
   
-  .Cadastro input:focus, .Cadastro button:focus {
+  .AdicionarConsulta input:focus, .AdicionarConsulta button:focus {
     outline: 0;
     border-color: #FF8CC8;
     box-shadow: 0 0 0 .2rem rgba(255, 188, 216, .5);
   }
   
-  .Cadastro button:hover {
+  .AdicionarConsulta button:hover {
     background-color: #DA3C78;
   }
