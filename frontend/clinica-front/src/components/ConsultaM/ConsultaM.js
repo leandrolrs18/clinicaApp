@@ -10,7 +10,7 @@ function ConsultaM(props) {
         <li><strong>Paciente :</strong> {props.nome}</li>
         <li><strong>Data:</strong> {props.data.toString()}</li>
       </ul>
-      <button type="submit">Cancelar</button>
+      <button type="submit">&times;</button>
     </div>
   )
 }
