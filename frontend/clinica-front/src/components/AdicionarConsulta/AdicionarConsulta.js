@@ -36,10 +36,10 @@ function AdicionarConsulta() {
       <form onSubmit={onSubmitHandler}>
         <div className="Linha">
           <div className="Coluna">
-            <label>Especialidade</label>
             <input
               type="text"
               name="especialidade"
+              placeholder="Especialidade"
               value={especialidade}
               onChange={event => setEspecialidade(event.target.value)}
               required>
@@ -48,10 +48,10 @@ function AdicionarConsulta() {
         </div>
         <div className="Linha">
           <div className="Coluna">
-            <label>Medico</label>
             <input
               type="text"
               name="medico"
+              placeholder="Médico"
               value={medico}
               onChange={event => setMedico(event.target.value)}
               required>
@@ -60,10 +60,10 @@ function AdicionarConsulta() {
         </div>
         <div className="Linha">
           <div className="Coluna">
-            <label>Data</label>
             <input
               type="date"
               name="data"
+              placeholder="Data da consulta"
               value={data}
               onChange={event => setData(event.target.value)}
               required>
@@ -72,9 +72,9 @@ function AdicionarConsulta() {
         </div>
         <div className="Linha">
           <div className="Coluna">
-            <label>Horário</label>
             <input
               type="time"
+              placeholder="Horário"
               name="horario"
               value={horario}
               onChange={event => setHorario(event.target.value)}

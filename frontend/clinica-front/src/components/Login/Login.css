@@ -20,8 +20,8 @@
 
 .Login {
   width: 40rem;
-  height: 20rem;
-  margin: 4rem 1rem 0rem 16rem;
+  height: 23rem;
+  margin: 2rem 1rem 0rem 2rem;
   padding: 2rem 2rem 2rem 2rem;
   background-color: #FFF;
   background-color: #ebf3ff;
@@ -33,6 +33,10 @@
   font-family:   sans-serif;
   color: #2c7eca;
   margin: .25rem 0;
+}
+
+.Login form {
+  margin-top: 2rem;
 }
 
 .Login .Linha {
@@ -59,7 +63,8 @@
 
 .Login input {
   display: inline;
-  width: 30rem;
+  width: 20rem;
+  height: 2.75rem;
   padding: .75rem .75rem;
   margin-right: 0.70rem;
   margin-left: 0.70rem;
@@ -74,7 +79,7 @@
 }
 
 .Login button {
-  width: 10rem;
+  width: 8rem;
   height: 2.5rem;
   color: #FFF;
   cursor: pointer;
@@ -84,7 +89,8 @@
   vertical-align: middle;
   border: 1px solid transparent;
   padding: .375rem .75rem;
-  margin: .75rem;
+  margin-top: 2rem;
+  margin-right: 0.70rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;

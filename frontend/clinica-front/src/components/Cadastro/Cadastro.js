@@ -29,89 +29,93 @@ function Cadastro() {
   }
 
   return (
-    <div className="Cadastro">
-      <h2>Adicionar Usuário</h2>
-      <form onSubmit={onSubmitHandler}>
-        <div className="Linha">
-          <div className="Coluna">
-            <label>Nome</label>
-            <input
-              type="text"
-              name="nome"
-              value={nome}
-              onChange={event => setNome(event.target.value)}
-              required>
-            </input>
+    <div className="All">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReC_lR7dW7GPX14rvkkywYhuJ4NnO7-cHUkA&usqp=CAU" />
+      <h3>Gerencie suas consultas com os melhores médicos</h3>
+      <div className="Cadastro">
+        <h2>Cadastre-se</h2>
+        <form onSubmit={onSubmitHandler}>
+          <div className="Linha">
+            <div className="Coluna">
+              <input
+                type="text"
+                name="nome"
+                value={nome}
+                placeholder="Nome"
+                onChange={event => setNome(event.target.value)}
+                required>
+              </input>
+            </div>
           </div>
-        </div>
-        <div className="Linha">
-          <div className="Coluna">
-            <label>Telefone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={telefone}
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              onChange={event => setTelefone(event.target.value)}
-              required>
-            </input>
+          <div className="Linha">
+            <div className="Coluna">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Telefone"
+                value={telefone}
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                onChange={event => setTelefone(event.target.value)}
+                required>
+              </input>
+            </div>
           </div>
-        </div>
-        <div className="Linha">
-          <div className="Coluna">
-            <label>Cpf</label>
-            <input
-              type="cpf"
-              name="cpf"
-              value={cpf}
-              onChange={event => setCpf(event.target.value)}
-              required>
-            </input>
+          <div className="Linha">
+            <div className="Coluna">
+              <input
+                type="cpf"
+                name="cpf"
+                placeholder="Cpf"
+                value={cpf}
+                onChange={event => setCpf(event.target.value)}
+                required>
+              </input>
+            </div>
           </div>
-        </div>
-        <div className="Linha">
-          <div className="Coluna">
-            <label>Senha</label>
-            <input
-              type="password"
-              name="senha"
-              value={senha}
-              onChange={event => setSenha(event.target.value)}
-              required>
-            </input>
+          <div className="Linha">
+            <div className="Coluna">
+              <input
+                type="password"
+                name="senha"
+                placeholder="Senha"
+                value={senha}
+                onChange={event => setSenha(event.target.value)}
+                required>
+              </input>
+            </div>
           </div>
-        </div>
-        <div className="Linha">
-          <div className="Coluna">
-            <label>Medico</label>
-            <input
-              type="checkbox"
-              name="medico"
-              value={medico}
-              onChange={event => setMedico(event.target.value)}
-              required>
-            </input>
+          <div className="Linha">
+            <div className="Coluna">
+              <input
+                type="text"
+                name="especialidade"
+                placeholder="Especialidade"
+                value={especialidade}
+                onChange={event => setEspecialidade(event.target.value)}
+                required>
+              </input>
+            </div>
           </div>
-        </div>
-        <div className="Linha">
-          <div className="Coluna">
-            <label>Especialidade</label>
-            <input
-              type="text"
-              name="especialidade"
-              value={especialidade}
-              onChange={event => setEspecialidade(event.target.value)}
-              required>
-            </input>
+          <div className="Linha">
+            <div className="Coluna">
+              <label>Médico?</label>
+              <input
+                type="checkbox"
+                name="medico"
+                value={medico}
+                onChange={event => setMedico(event.target.value)}
+                required>
+              </input>
+            </div>
           </div>
-        </div>
-        <Link to={'/ConsultasPaciente'}>
-          <button type="submit">
-            Adicionar
-          </button>
-        </Link>
-      </form>
+          <Link to={'/ConsultasPaciente'}>
+            <button type="submit">
+              Adicionar
+            </button>
+          </Link>
+        </form>
+      </div>
     </div>
   )
 }

@@ -1,17 +1,45 @@
+.All{
+  display: inline-flex;
+}
+.All img{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.All h3 {
+  display: inline;
+  font-size: 1.8rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  font-family:   sans-serif;
+  color: #0a345c;
+}
+
+
 .Cadastro {
-  width: 60rem;
-  margin: 1rem 1rem;
-  padding: 1.25rem;
+  width: 40rem;
+  height: 35rem;
+  margin: 2rem 1rem 0rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   background-color: #FFF;
   background-color: #ebf3ff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
 }
+.Cadastro:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .14);
+}
 
 .Cadastro h2 {
-  font-size: 1.25rem;
-  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-family:   sans-serif;
   color: #2c7eca;
   margin: .25rem 0;
+}
+
+.Cadastro form {
+  margin-top: 2rem;
 }
 
 .Cadastro .Linha {
@@ -29,15 +57,20 @@
 }
 
 .Cadastro label {
-  display: inline-block;
+  font-size: 1.15rem;
+  font-family:   sans-serif;
+  display: inline;
+  color: #030c14;
   margin-bottom: 1rem;
-  margin-right: 1rem;
 }
 
 .Cadastro input {
-  display: inline-block;
-  width: 30rem;
+  display: inline;
+  width: 20rem;
+  height: 2.75rem;
   padding: .75rem .75rem;
+  margin-right: 0.70rem;
+  margin-left: 0.70rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -49,6 +82,8 @@
 }
 
 .Cadastro button {
+  width: 8rem;
+  height: 2.5rem;
   color: #FFF;
   cursor: pointer;
   display: inline-block;
@@ -57,7 +92,8 @@
   vertical-align: middle;
   border: 1px solid transparent;
   padding: .375rem .75rem;
-  margin-top: .25rem;
+  margin-top: 1rem;
+  margin-right: 0.70rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;

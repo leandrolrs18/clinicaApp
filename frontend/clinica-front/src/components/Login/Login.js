@@ -40,11 +40,11 @@ function Login() {
         <form onSubmit={onSubmitHandler}>
           <div className="Linha">
             <div className="Coluna">
-              <label>Cpf</label>
               <input
                 type="text"
                 name="cpf"
                 value={cpf}
+                placeholder="Cpf"
                 onChange={event => setCpf(event.target.value)}
                 required>
               </input>
@@ -52,11 +52,11 @@ function Login() {
           </div>
           <div className="Linha">
             <div className="Coluna">
-              <label>Senha</label>
               <input
                 type="password"
                 name="senha"
                 value={senha}
+                placeholder="Senha"
                 onChange={event => setSenha(event.target.value)}
                 required>
               </input>
@@ -69,7 +69,7 @@ function Login() {
           </Link>
           <Link to={'/Cadastro'}>
             <button type="submit">
-              Cadastre-se
+              Cadastrar
             </button>
           </Link>
         </form>
