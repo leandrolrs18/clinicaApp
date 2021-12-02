@@ -16,7 +16,7 @@ function Login() {
 
     const usuario = { cpf, senha }
 
-    //fetch('https://reqres.in/api/users', {
+    //fetch('https://localhost:8000/C', {
     // method: 'POST',
     // headers: { 'Content-Type': 'application/json' },
     //  body: JSON.stringify(usuario)
