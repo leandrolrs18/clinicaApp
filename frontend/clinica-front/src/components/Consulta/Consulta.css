@@ -1,0 +1,57 @@
+
+.Consulta {
+    width: 65rem;
+    height: 7rem;
+    position: relative;
+    display: inline-block;
+    margin: 1rem 7.5rem;
+    border-radius: .25rem;
+    background-color: #FFF;
+    background-color: #ebf3ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+    border-radius: 4.95rem;
+  }
+  
+  .Consulta:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .14);
+  }
+  
+  .Consulta ul {
+    display: inline-block;
+    padding-left: 0;
+    margin: 1rem 30rem 1rem 0rem;
+    list-style: none;
+  }
+  
+  .Consulta ul li strong {
+    color: #3c80da;
+    font-family:   sans-serif;
+  }
+  .Consulta .but{
+    margin: -5rem 0rem 1rem 40rem;
+  }
+  
+  .Consulta button {
+    border: none;
+    outline: none;
+    color: #FFF;
+    background: none;
+    cursor: pointer;
+    line-height: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700; 
+    margin: 1rem 2rem 1rem 2rem;
+    font-family: sans-serif;
+    position: relative ;
+    border-radius: 1.5rem;
+    background-color: #ced5da;
+    padding: .2rem .35rem .35rem .35rem;
+  }
+  
+  
+  .Consulta button:hover,
+  .Consulta button:focus {
+    color: #FFF;
+    background-color: #6cacff;
+  }
+ 

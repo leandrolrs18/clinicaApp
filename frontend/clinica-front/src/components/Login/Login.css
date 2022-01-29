@@ -1,0 +1,109 @@
+.All{
+  display: inline-flex;
+}
+.All img{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.All h3 {
+  display: inline;
+  font-size: 1.8rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  font-family:   sans-serif;
+  color: #0a345c;
+}
+
+
+.Login {
+  width: 40rem;
+  height: 23rem;
+  margin: 2rem 1rem 0rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
+  background-color: #FFF;
+  background-color: #ebf3ff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+}
+
+.Login h2 {
+  font-size: 1.75rem;
+  font-family:   sans-serif;
+  color: #2c7eca;
+  margin: .25rem 0;
+}
+
+.Login form {
+  margin-top: 2rem;
+}
+
+.Login .Linha {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -.5rem;
+  padding: .5rem 0;
+}
+
+.Login .Coluna {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0 .5rem;
+}
+
+.Login label {
+  font-size: 1.15rem;
+  font-family:   sans-serif;
+  display: inline;
+  color: #030c14;
+  margin-bottom: 1rem;
+}
+
+.Login input {
+  display: inline;
+  width: 20rem;
+  height: 2.75rem;
+  padding: .75rem .75rem;
+  margin-right: 0.70rem;
+  margin-left: 0.70rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #FFF;
+  border: 1px solid #bcdbff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.Login button {
+  width: 8rem;
+  height: 2.5rem;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #6c8eff;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  margin-top: 2rem;
+  margin-right: 0.70rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.Login input:focus, .Login button:focus {
+  outline: 0;
+  border-color: #8cb0ff;
+  box-shadow: 0 0 0 .2rem rgba(188, 206, 255, 0.5);
+}
+
+.Login button:hover {
+  background-color: #3c66da;
+}
